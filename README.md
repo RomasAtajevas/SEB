@@ -9,6 +9,7 @@
 
 1. Run Apache Tomcat 8
 2. Move generated _SEB-1.0.war_ file into %tomcat%/webapps folder
+3. Access application by typing _localhost:8080/SEB-1.0_ into browser's address bar (change _localhost_ to appropiate host if needed)
 
 **Steps (auto deploy disabled):**
 
@@ -16,6 +17,7 @@
 2. Delete _temp_ and _work_ folders in %tomcat% directory
 3. Move generated _SEB-1.0.war_ file into %tomcat%/webapps folder
 4. Start Apache Tomcat 8
+5. Access application by typing _localhost:8080/SEB-1.0_ into browser's address bar (change _localhost_ to appropiate host if needed)
 
 **%tomcat% - base directory for Apache Tomcat 8**
 
