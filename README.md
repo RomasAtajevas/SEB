@@ -41,5 +41,5 @@ As Spring MVC is used, architecture is model-view-controller based.
 - **Spring** – dependency injection
 - **Spring MVC** – provides model-view-controller architecture and components used to develop web applications
 - **Jackson** – JSON data-binding (converting POJO’s to JSON and back)
-- **Chart.js** - displaying charts
-- **jQuery** - HTML document manipulation and Ajax
+- **Chart.js** – displaying charts
+- **jQuery** – HTML document manipulation and Ajax
