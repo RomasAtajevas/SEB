@@ -1,3 +1,13 @@
+# SEB
+
+## About
+
+Application consists of 3 pages:
+
+1. List of currency rate changes for each currency for selected date
+2. Interactive list of rates. Ability to edit currency's rate and find currency based on its acronym (GBP, USD, ...)
+3. Chart representing currency rates for selected currency and date period
+
 ## Running application
 
 **Requirements:**
