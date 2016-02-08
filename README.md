@@ -35,7 +35,7 @@ As Spring MVC is used, architecture is model-view-controller based.
 
 ## Used tools, libraries, etc
 
-- **NetBeans** - IDE
+- **NetBeans** – IDE
 - **Maven** – project’s build and dependencies management
 - **Apache FreeMarker** – template engine to generate output text based on templates and changing data
 - **Spring** – dependency injection
