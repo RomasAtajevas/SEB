@@ -1,6 +1,5 @@
 package com.seb.controller;
 
-import com.seb.model.Chart;
 import com.seb.model.ExchangeRates;
 import com.seb.model.ExchangeRates.Item;
 import com.seb.service.ExchangeRatesService;
@@ -19,24 +18,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @author rataj
  */
 @Controller
-public class PageController {
+public class SecondPageController {
 
     private ExchangeRates staticRates;
 
     @Autowired
     private ExchangeRatesService exchangeRatesService;
-
-    @RequestMapping(value = {"/", "/firstPage"}, method = RequestMethod.GET)
-    public String firstPage(@RequestParam(value = "date", required = false) String date, Model model) throws Exception {
-        if (date == null) {
-            date = "2014-12-31";
-        }
-
-        model.addAttribute("date", date);
-        model.addAttribute("differences", exchangeRatesService.calculateDifferences(date));
-
-        return "firstPage";
-    }
 
     @RequestMapping(value = {"/secondPage"}, method = RequestMethod.GET)
     public String secondPage(@RequestParam(value = "currency", required = false) String currency, Model model) {
@@ -59,12 +46,6 @@ public class PageController {
         return "secondPage";
     }
 
-    @RequestMapping(value = {"/chart"}, method = RequestMethod.GET)
-    public String chart(Model model) {
-        model.addAttribute("currencies", exchangeRatesService.currencies());
-        return "chart";
-    }
-
     @RequestMapping(value = {"/updateRate"}, method = RequestMethod.POST)
     @ResponseBody
     public String updateRate(@RequestParam(value = "currency") String currency, @RequestParam(value = "value") double value) {
@@ -72,11 +53,5 @@ public class PageController {
             i.setRate(value);
         });
         return "";
-    }
-
-    @RequestMapping(value = {"/chart/data"}, method = RequestMethod.GET)
-    @ResponseBody
-    public Chart chart(@RequestParam(value = "currency") String currency, @RequestParam(value = "from") String from, @RequestParam(value = "to") String to) {
-        return exchangeRatesService.chart(currency, from, to);
     }
 }
