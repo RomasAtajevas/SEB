@@ -35,9 +35,10 @@ As Spring MVC is used, architecture is model-view-controller based.
 
 ## Used tools, libraries, etc
 
-- **Maven** – for project’s build and dependencies management.
-- **Apache FreeMarker** – as a template engine to generate output text based on templates and changing data.
-- **Spring** – for dependency injection.
-- **Spring MVC** – provides model-view-controller architecture and components used to develop web applications.
-- **Jackson** – for JSON data-binding. Ability to convert POJO’s to JSON and back.
-- **Chart.js** - for displaying charts
+- **Maven** – project’s build and dependencies management
+- **Apache FreeMarker** – template engine to generate output text based on templates and changing data
+- **Spring** – dependency injection
+- **Spring MVC** – provides model-view-controller architecture and components used to develop web applications
+- **Jackson** – JSON data-binding (converting POJO’s to JSON and back)
+- **Chart.js** - displaying charts
+- **jQuery** - HTML document manipulation and Ajax
