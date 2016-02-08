@@ -8,13 +8,13 @@
 **Steps (auto deploy enabled):**
 
 1. Run Apache Tomcat 8
-2. Move generated SEB-1.0.war file into %tomcat%/webapps folder
+2. Move generated _SEB-1.0.war_ file into %tomcat%/webapps folder
 
 **Steps (auto deploy disabled):**
 
 1. Stop Apache Tomcat 8 if it is running
-2. Delete temp and work folders in %tomcat% directory
-3. Move generated SEB-1.0.war file into %tomcat%/webapps folder
+2. Delete _temp_ and _work_ folders in %tomcat% directory
+3. Move generated _SEB-1.0.war_ file into %tomcat%/webapps folder
 4. Start Apache Tomcat 8
 
 **%tomcat% - base directory for Apache Tomcat 8**
