@@ -1,5 +1,3 @@
-# SEB
-
 ## About
 
 Application consists of 3 pages:
